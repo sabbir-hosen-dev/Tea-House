@@ -23,21 +23,13 @@
 
     <!-- tailwing css cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      /** @type {import('tailwindcss').Config} */
-      module.exports = {
-        content: ["./src/**/*.{html,js}"],
-        theme: {
-          fontFamily: {
-            manrope: [' "Manrope", sans-serif'],
-          },
-          extend: {},
-        },
-        plugins: [],
-      };
-    </script>
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body style="font-family: 'Manrope', sans-serif">
+  <body class="manrope">
     <main class="max-w-screen-2xl mx-auto px-4 md:px-14">
       <!-- header  -->
       <header class="flex flex-col md:flex-row gap-10 py-10 items-center">
@@ -94,7 +86,7 @@
             <p class="text-center">Creamer could be replaced by fresh milk</p>
           </div>
           <div
-            class=" shadow-lg produc p-4 text-center rounded-md bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]"
+            class="shadow-lg produc p-4 text-center rounded-md bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]"
           >
             <div class="flex justify-center">
               <img src="images/tea-2.png" alt="" />
@@ -112,7 +104,7 @@
             <p class="text-center">Creamer could be replaced by fresh milk</p>
           </div>
           <div
-            class=" shadow-lg produc p-4 text-center rounded-md bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]"
+            class="shadow-lg produc p-4 text-center rounded-md bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]"
           >
             <div class="flex justify-center">
               <img class="" src="images/tea-4.png" alt="" />
@@ -133,7 +125,7 @@
           <div class="bg-[#e6a52352] py-5 rounded-xl row-span-2 flex">
             <img class="m-auto" src="images/fresh-1.png" alt="" />
           </div>
-          <div class="bg-[#577639] rounded-xl row-span-2 flex  ">
+          <div class="bg-[#577639] rounded-xl row-span-2 flex">
             <img class="m-auto" src="images/fresh-2.png" alt="" />
           </div>
 
@@ -143,7 +135,10 @@
         </div>
 
         <div class="">
-          <h1 class="text-4xl lg:text-6xl font-extrabold mb-5">Great Tea, Freshly  <br> Presented</h1>
+          <h1 class="text-4xl lg:text-6xl font-extrabold mb-5">
+            Great Tea, Freshly <br />
+            Presented
+          </h1>
           <p class="mb-5">
             The meaning of gong cha is chanese is to provide the best tea to
             emperor from all possessions . It represents the highest quality and
@@ -152,18 +147,98 @@
             unique customized service orginated from Taiwan.
           </p>
           <h4 class="font-extrabold text-2xl mb-5">Unique Taste</h4>
-          <p class="mb-5  pr-[15%]">
+          <p class="mb-5 pr-[15%]">
             A Unique and different style from other teapots gives a luxurious
             and minimalist impression
           </p>
 
           <h4 class="font-extrabold text-2xl mb-5">Premium Quality</h4>
-          <p class=" pr-[15%]">
+          <p class="pr-[15%]">
             Premium Quality that makes tea more elegant and more durable when
             you use it.
           </p>
         </div>
       </section>
+
+      <!-- -- clients sectio --  -->
+
+      <section
+        class="bg-gradient-to-t grid gap-9 grid-cols-1 md:grid-cols-2 items-center p-9 from-orange-500 to-red-500 rounded-lg"
+      >
+        <!-- -- left content --  -->
+        <div class="text-white font-bold">
+          <h2 class="text-4xl">Meet Our Super Clients</h2>
+          <p class="font-normal mt-5">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <button
+            class="font-bold px-7 py-4 rounded-lg mt-5 bg-white text-[#D22C34]"
+          >
+            Show All
+          </button>
+        </div>
+
+        <!-- -- right section --  -->
+        <div class="right-section relative mt-9">
+          <div class="flex flex-col items-end gap-6">
+            <!-- top  -->
+            <div class="clients p-8 w-3/4 rounded-md opacity-45 bg-white relative">
+              <p class="text-sm">
+                We are providing the best and suitable home insurance services for
+                the people who are interested to treatment
+              </p>
+              <h3 class="font-bold my-1">Ilham Yuda</h3>
+              <p class="text-sm">Businessman</p>
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img
+                class="p-1"
+                src="images/client.png"
+                alt=""
+              />
+              </div>
+            </div>
+  
+            <!-- bottom  -->
+            <div class="clients p-8 w-3/4 rounded-md opacity-45 bg-white relative">
+              <p class="text-sm">
+                We are providing the best and suitable home insurance services for
+                the people who are interested to treatment
+              </p>
+              <h3 class="font-bold my-1">Ilham Yuda</h3>
+              <p class="text-sm">Businessman</p>
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img
+                class="p-1"
+                src="images/client.png"
+                alt=""
+              />
+              </div>
+            </div>
+          </div>
+          <!-- -- medele --  -->
+           <div class="absolute top-1/2  transform -translate-y-1/2">
+            <div class="clients p-8 w-3/4 rounded-md bg-white relative">
+              <p class="text-sm">
+                We are providing the best and suitable home insurance services for
+                the people who are interested to treatment
+              </p>
+              <h3 class="font-bold my-1">Ilham Yuda</h3>
+              <p class="text-sm">Businessman</p>
+              <div class="absolute -left-5 -top-5  bg-white rounded-full">
+                <img
+                class="p-1"
+                src="images/client.png"
+                alt=""
+              />
+              </div>
+            </div>
+           </div>
+        </div>
+      </section>
     </main>
   </body>
+  
 </html>
